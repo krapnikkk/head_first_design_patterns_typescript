@@ -1,0 +1,3 @@
+interface IFlyBehavior {
+    fly(): void;
+}
