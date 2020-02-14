@@ -33,16 +33,20 @@ export default class WeatherData implements ISubject {
         this.notifyObserver();
     }
 
-    public getMeasurements(): void {
-        fetch('https://bird.ioliu.cn/v2?url=http://www.nmc.cn/f/rest/real/59493&[Access-Control-Allow-Origin:*]')
-            .then(function (res) {
-                return res.json();
-            }).then((value) => {
-                let weather = value['weather'],
-                    temperature = +weather['temperature'],
-                    humidity = +weather['humidity'],
-                    airpressure = +weather['airpressure'];
-                this.setMeasurements(temperature, humidity, airpressure);
-            })
+    public async getMeasurements(): Promise<any> {
+        await new Promise((resolve, reject) => {
+            fetch('https://bird.ioliu.cn/v2?url=http://www.nmc.cn/f/rest/real/59493&[Access-Control-Allow-Origin:*]')
+                .then(function (res) {
+                    return res.json();
+                }).then((value) => {
+                    let weather = value['weather'],
+                        temperature = +weather['temperature'],
+                        humidity = +weather['humidity'],
+                        airpressure = +weather['airpressure'];
+                    this.setMeasurements(temperature, humidity, airpressure);
+                    resolve();
+                })
+        })
+
     }
 }

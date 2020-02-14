@@ -15,4 +15,4 @@ houseBlend.setSize(Size.TALL);
 console.log(darkRoast.getDescription(), darkRoast.cost());
 houseBlend = new Soy(houseBlend);
 houseBlend =  new Mocha(houseBlend);
-console.log(darkRoast.getDescription(), darkRoast.cost());
+console.log(houseBlend.getDescription(), houseBlend.cost());

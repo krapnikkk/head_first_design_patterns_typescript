@@ -5,8 +5,11 @@ let weatherData:WeatherData = new WeatherData(),
     currentConditionsDisplay:CurrentConditionsDisplay = new CurrentConditionsDisplay(weatherData),
     statisticsDisplay:StatisticsDisplay = new StatisticsDisplay(weatherData);
 
-    weatherData.getMeasurements();
-    statisticsDisplay.removenotification();//then异步导致数据接受之前已经移除通知了
-    weatherData.getMeasurements();
+    async function updateWeather(){
+        await weatherData.getMeasurements();
+        statisticsDisplay.removenotification();//then异步导致数据接受之前已经移除通知了
+        await weatherData.getMeasurements();
+    }
+    updateWeather();
 
 
