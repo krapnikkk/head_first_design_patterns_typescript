@@ -2,10 +2,10 @@ const path=require('path');
 const HtmlWebpackPlugin=require('html-webpack-plugin');
 module.exports={
     mode:'development',
-    entry:'./02_weatherStation/Main.ts',
+    entry:'./08_Facade/Main.ts',
     output:{
         filename:'bundle.js',
-        path:path.resolve(__dirname,'dist/02_weatherStation')
+        path:path.resolve(__dirname,'dist/08_Facade')
     },
     module:{
         rules:[
@@ -22,11 +22,11 @@ module.exports={
     },
     devtool: 'inline-source-map',
     devServer:{
-        contentBase:path.join(__dirname, "dist/02_weatherStation"),
+        contentBase:path.join(__dirname, "dist/08_Facade"),
     },
     plugins:[
         new HtmlWebpackPlugin({
-            title:'02_weatherStation'
+            title:'08_Facade'
         })
     ]
 }
