@@ -2,10 +2,10 @@ const path=require('path');
 const HtmlWebpackPlugin=require('html-webpack-plugin');
 module.exports={
     mode:'development',
-    entry:'./08_Facade/Main.ts',
+    entry:'./09_TemplateMethod/Main.ts',
     output:{
         filename:'bundle.js',
-        path:path.resolve(__dirname,'dist/08_Facade')
+        path:path.resolve(__dirname,'dist/09_TemplateMethod')
     },
     module:{
         rules:[
@@ -22,11 +22,11 @@ module.exports={
     },
     devtool: 'inline-source-map',
     devServer:{
-        contentBase:path.join(__dirname, "dist/08_Facade"),
+        contentBase:path.join(__dirname, "dist/09_TemplateMethod"),
     },
     plugins:[
         new HtmlWebpackPlugin({
-            title:'08_Facade'
+            title:'09_TemplateMethod'
         })
     ]
 }
