@@ -1,6 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const dirname = "09_TemplateMethod";
+const dirname = "04_SimpleFactory";
 module.exports = {
     mode: 'development',
     entry: `./${dirname}/Main.ts`,
