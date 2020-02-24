@@ -1,14 +1,15 @@
 import SimplePizzaFactory from "./SimplePizzaFactory";
 import PizzaStore from "./PizzaStore";
+import Pizza from "./pizza/Pizza";
 
 let factory: SimplePizzaFactory = new SimplePizzaFactory(),
     store: PizzaStore = new PizzaStore(factory),
-    cheesePizza = store.orderPizza("cheese"),
-    veggiePizza = store.orderPizza("veggie");
+    pizza:Pizza = store.orderPizza("cheese");
 
-    console.log(`we order a ${cheesePizza.getName}`);
-    cheesePizza.toString();
+    console.log(`we order a ${pizza.getName()}`);
+    pizza.toString();
 
-    console.log(`we order a ${veggiePizza.getName}`);
-    veggiePizza.toString();
+    pizza = store.orderPizza("veggie");
+    console.log(`we order a ${pizza.getName()}`);
+    pizza.toString();
 
