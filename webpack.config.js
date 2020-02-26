@@ -24,9 +24,14 @@ module.exports = {
     devtool: 'inline-source-map',
     devServer: {
         contentBase: path.join(__dirname, `dist/${dirname}`),
+        port: 3000,
+        open: true
     },
     plugins: [
         new HtmlWebpackPlugin({
+            minify: {
+                removeAttributeQuotes: true
+            },
             filename: 'index.html',
             template: './index.html',
             inject: 'body'
