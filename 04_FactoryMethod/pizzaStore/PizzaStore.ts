@@ -1,4 +1,4 @@
-import Pizza from "./Pizza";
+import Pizza from "../Pizza/Pizza";
 
 export default abstract class PizzaStore {
     abstract createPizza(item: string): Pizza;

@@ -23,7 +23,8 @@
 |策略模式 Strategy| [鸭子模拟器](https://krapnikkk.github.io/head_first_design_patterns_typescript/dist/01_Strategy/index.html) | 策略模式允许你基于情况选择算法或策略 | [查看](./01_Strategy) |
 |观察者模式 Observer| [气象局](https://krapnikkk.github.io/head_first_design_patterns_typescript/dist/02_Observer/index.html) | 定义了一个对象间的依赖，这样无论何时一个对象改变了状态，其他所有依赖者会收到提醒 | [查看](./02_Observer) |
 |装饰器模式 Decorator| [星巴兹咖啡](https://krapnikkk.github.io/head_first_design_patterns_typescript/dist/03_Decorator/index.html) | 装饰器模式让你能在运行时动态地改变一个对象的表现，通过把它们封装到一个装饰器类 | [查看](./03_Decorator) |
-|简单工厂模式 SimpleFactory| [简单披萨店工厂](https://krapnikkk.github.io/head_first_design_patterns_typescript/dist/04_SimpleFactory/index.html) | 它提供了一个把生成逻辑移交给子类的方法 | [查看](./04_SimpleFactory) |
+|简单工厂模式 SimpleFactory| [简单披萨店工厂](https://krapnikkk.github.io/head_first_design_patterns_typescript/dist/04_SimpleFactory/index.html) | 一个制造工厂的工厂；一个工厂把独立但是相关／有依赖性的工厂进行分类，但是不需要给出具体的类。 | [查看](./04_SimpleFactory) |
+|工厂方法模式 SimpleFactory| [披萨材料工厂](https://krapnikkk.github.io/head_first_design_patterns_typescript/dist/04_FactoryMethod/index.html) | 它提供了一个把生成逻辑移交给子类的方法 | [查看](./04_FactoryMethod) |
 |单例模式 Singleton| [单例](https://krapnikkk.github.io/head_first_design_patterns_typescript/dist/05_Singleton/index.html) | 确保指定的类只生成一个对象 | [查看](./05_Singleton) |
 |命令模式 Command| [家电遥控器](https://krapnikkk.github.io/head_first_design_patterns_typescript/dist/06_Command/index.html) | 允许你封装对象的功能。此模式的核心思想是分离调用者和接收者 | [查看](./06_Command) |
 |适配器模式 Adapter| [火鸡&鸭子适配器](https://krapnikkk.github.io/head_first_design_patterns_typescript/dist/07_Adapter/index.html) | 适配器模式让你封装一个不兼容的对象到一个适配器，来兼容其他类 | [查看](./07_Adapter) |
