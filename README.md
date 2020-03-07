@@ -32,6 +32,7 @@
 |外观模式 Facade| [家庭剧院系统](https://krapnikkk.github.io/head_first_design_patterns_typescript/dist/08_Facade/index.html) | 外观模式提供了一个复杂子系统的简单接口 | [查看](./08_Facade) |
 |模板模式 TemplateMethod| [咖啡馆](https://krapnikkk.github.io/head_first_design_patterns_typescript/dist/09_TemplateMethod/index.html) | 模板模式定义了一个算法会如何执行的骨架，但把这些步骤的实现移交给子类 | [查看](./09_TemplateMethod) |
 |迭代器模式 Iterator| [菜单合并](https://krapnikkk.github.io/head_first_design_patterns_typescript/dist/10_Iterator/index.html) | 它提供了一种方式来获得对象的元素，而不必暴露底层实现。 | [查看](./10_Iterator) |
+|组合模式 Composite| [菜单组合](https://krapnikkk.github.io/head_first_design_patterns_typescript/dist/10_Composite/index.html) | 组合模式让调用者可以用统一的模式对待不同的对象。 | [查看](./10_Composite) |
 
 [/placeholder]:p
 
