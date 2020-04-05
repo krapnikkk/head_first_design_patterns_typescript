@@ -1,6 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const dirname = "10_Composite";
+const dirname = "11_State";
 module.exports = {
     mode: 'development',
     entry: `./${dirname}/Main.ts`,
